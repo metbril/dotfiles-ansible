@@ -8,8 +8,8 @@ for file in ~/.{path,aliases,functions,extra}; do
 done;
 unset file;
 
-VISUAL=nano; export VISUAL
-EDITOR=nano; export EDITOR
+VISUAL=vim; export VISUAL
+EDITOR=vim; export EDITOR
 
 # clear any output like copyright etc
 clear
