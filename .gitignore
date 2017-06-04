@@ -1,0 +1,9 @@
+# vim
+*.swp
+*.un~
+
+# other temp files
+*.bak
+
+# Mac
+.DS_Store
