@@ -54,6 +54,7 @@ alias timer='echo "Timer started. Stop with Ctrl-D." && date && time cat && date
 
 # Get macOS Software Updates, and update installed Ruby gems, Homebrew, npm, and their installed packages
 alias update='sudo softwareupdate -i -a; brew update; brew upgrade --all; brew cleanup; npm install npm -g; npm update -g; sudo gem update --system; sudo gem update'
+alias brun='brew uninstall'
 
 # IP addresses
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
@@ -125,3 +126,6 @@ alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resource
 
 # Reload the shell (i.e. invoke as a login shell)
 alias reload="exec $SHELL -l"
+
+# Dirty trick to trigger forced backup of external SSD
+alias bbb='date > /Volumes/Samsung\ T5\ 1TB/backblaze-backup.txt'
