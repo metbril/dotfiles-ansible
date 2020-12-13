@@ -1,0 +1,55 @@
+---
+- hosts: local
+
+  tasks:
+    - import_tasks: tasks/macos/homebrew.yml
+      tags: ['homebrew']
+
+  vars:
+
+    # homebrew_taps:
+    #   - homebrew/core
+    #   - homebrew/cask
+    #   - homebrew/cask-fonts
+    #   - homebrew/cask-drivers
+
+    # homebrew_cask_appdir: /Applications
+    # # homebrew_cask_uninstalled_apps:
+    # homebrew_cask_apps:
+    #   - alfred
+    #   - appcleaner
+    #   - balenaetcher
+    #   - bartender
+    #   - bettertouchtool
+    #   - bitwarden
+    #   - coconutbattery
+    #   - controlplane
+    #   # - firefox # manual for now
+    #   - font-fira-mono
+    #   - font-fira-code
+    #   - font-fira-code-nerd-font
+    #   - font-ibm-plex-mono # requires svn
+    #   - font-oswald
+    #   # - hazel # using an older version
+    #   - iterm2
+    #   # - keyboard-maestro # using an older version
+    #   - keyboardcleantool
+    #   - logitech-options
+    #   - python # python 3 al geinstalleerd voor ansible ;-)
+    #   - scroll-reverser
+    #   - signal
+    #   - spotify
+    #   - thunderbird
+    #   - ubersicht
+    #   - zotero
+
+    # # homebrew_uninstalled_packages:
+    # homebrew_installed_packages:
+    #   - bitwarden-cli
+    #   - coreutils
+    #   - exiftool
+    #   - htop
+    #   - imagemagick
+    #   - terminal-notifier
+    #   - tmux
+    #   # - svn # for google fonts
