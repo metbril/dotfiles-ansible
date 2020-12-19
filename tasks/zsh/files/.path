@@ -1,8 +1,0 @@
-#!/usr/bin/env bash
-
-# python, ruby etc scripts
-export PATH="$HOME/scripts:$PATH";
-
-# binaries and shell scripts
-export PATH="$HOME/bin:$PATH";
-
