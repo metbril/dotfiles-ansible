@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+cd "${BASH_SOURCE%/*}/.."
+
+join() {
+    IFS="$1"
+    shift
+    echo "$*"
+}
+
+if [[ $# -gt 0 ]]; then
+    tags="--tags=$(join , $@)"
+fi
+
+bin/play $tags

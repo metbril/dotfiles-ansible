@@ -1,0 +1,6 @@
+---
+- hosts: all
+  tasks:
+    - name: Backup existing files
+    - name: Remove existing files
+    - name: Link new files

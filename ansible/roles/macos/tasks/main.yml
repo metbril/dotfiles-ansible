@@ -1,0 +1,58 @@
+---
+# - name: Install Homebrew Cask
+#   homebrew: name=brew-cask state=latest
+#   tags: update
+
+- name: Tap Cask versions
+  homebrew_tap:
+    name: "{{ item }}"
+    state: present
+  loop: "{{ macos.homebrew_taps }}"
+  tags: taps
+
+- name: Install packages
+  homebrew: 
+    name: "{{ item }}" 
+    state: installed
+  loop: "{{ packages }}"
+  tags: packages
+
+- name: Install apps
+  homebrew_cask: 
+    name: "{{ item }}" 
+    state: installed
+  loop: "{{ apps }}"
+  tags: apps
+
+- name: Install drivers
+  homebrew_cask: 
+    name: "{{ item }}" 
+    state: installed
+  loop: "{{ drivers }}"
+  tags: 
+    - apps
+    - drivers
+
+- name: Install fonts
+  homebrew_cask:
+    name: "{{ item }}" 
+    state: installed
+  loop: "{{ fonts }}"
+  tags: fonts
+
+- name: Set defaults
+  shell: '{{ item }}'
+  changed_when: no
+  loop: "{{ macos.defaults }}"
+  tags: defaults
+
+# apply defaults
+- name: Restart Finder
+  shell: killall Finder
+  tags: defaults
+
+# apply defaults
+- name: Restart Dock
+  shell: killall Dock
+  tags: defaults
+

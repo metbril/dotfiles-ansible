@@ -1,0 +1,63 @@
+---
+macos:
+  homebrew_taps:
+    - homebrew/core
+    - homebrew/cask
+    - homebrew/cask-fonts
+    # - homebrew/cask-drivers
+
+apps:
+  - alfred
+  - appcleaner
+  - balenaetcher
+  - bartender
+  - bettertouchtool
+  - bitwarden
+  - caffeine
+  - coconutbattery
+  - controlplane
+  # - firefox # manual for now
+  # - hazel # using an older version
+  - hocus-focus
+  - iterm2
+  # - keyboard-maestro # using an older version
+  - keyboardcleantool
+  - rectangle
+  - scroll-reverser
+  - signal
+  - spotify
+  # - thunderbird
+  - ubersicht
+  - vlc
+  - whatsapp
+  - zotero
+
+drivers:
+  - garmin-basecamp
+  - garmin-express
+  - jabra-direct
+  - logitech-camera-settings # webcam
+  - logitech-options         # mouse / keyboard
+  - logitech-unifying        # mouse / keyboard
+  - samsung-portable-ssd-t5
+  - sonos
+  - yubico-yubikey-personalization-gui
+
+fonts:
+  - font-fira-mono
+  - font-fira-code
+  - font-fira-code-nerd-font
+  - font-ibm-plex-mono # requires svn
+  - font-oswald
+
+packages:
+  - ansible # already installed, but included for completeness
+  - bitwarden-cli
+  - coreutils
+  - exiftool
+  - htop
+  - imagemagick
+  - python # python 3 al geinstalleerd voor ansible ;-)
+  - terminal-notifier
+  - tmux
+  # - svn # for google fonts
