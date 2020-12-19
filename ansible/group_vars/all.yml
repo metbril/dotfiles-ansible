@@ -7,29 +7,45 @@ macos:
     # - homebrew/cask-drivers
 
 apps:
+  - adobe-digital-editions
   - alfred
   - appcleaner
   - balenaetcher
   - bartender
+  # - bbedit # manually install older version
   - bettertouchtool
   - bitwarden
   - caffeine
+  - calibre
   - coconutbattery
   - controlplane
+  - cryptomator
+  - cyberduck
+  - devonthink
   # - firefox # manual for now
   # - hazel # using an older version
+  - digikam
   - hocus-focus
+  - imageoptim
   - iterm2
   # - keyboard-maestro # using an older version
   - keyboardcleantool
+  - libreoffice
+  - libreoffice-language-pack
+  - nextcloud
+  - nvalt
+  - obsidian
+  - omnidisksweeper
+  - private-internet-access
   - rectangle
   - scroll-reverser
   - signal
   - spotify
+  - sync
   # - thunderbird
   - ubersicht
   - vlc
-  - whatsapp
+  - vscodium
   - zotero
 
 drivers:
@@ -57,6 +73,9 @@ packages:
   - exiftool
   - htop
   - imagemagick
+  - imageoptim-cli
+  - multimarkdown
+  - pandoc
   - python # python 3 al geinstalleerd voor ansible ;-)
   - terminal-notifier
   - tmux
