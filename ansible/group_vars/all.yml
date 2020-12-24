@@ -1,10 +1,11 @@
 ---
 macos:
-  homebrew_taps:
-    - homebrew/core
-    - homebrew/cask
-    - homebrew/cask-fonts
-    # - homebrew/cask-drivers
+
+homebrew_taps:
+  - homebrew/core
+  - homebrew/cask
+  - homebrew/cask-fonts
+  - homebrew/cask-drivers
 
 apps:
   - adobe-digital-editions
