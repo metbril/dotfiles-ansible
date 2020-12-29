@@ -7,7 +7,7 @@
   homebrew_tap:
     name: "{{ item }}"
     state: present
-  loop: "{{ macos.homebrew_taps }}"
+  loop: "{{ homebrew_taps }}"
   tags: taps
 
 - name: Install packages
