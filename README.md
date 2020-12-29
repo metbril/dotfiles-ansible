@@ -38,6 +38,12 @@ ansible-playbook macos.yml --ask-become-pass
 
 As of macOS 10.15 Catalina `zsh` has become the default shell.
 
+## Known issues
+
+- Voor **DevonThink** moet ik de licentie opnieuw invoeren op een nieuwe computer. Omdat ik maar 2 licenties heb, moet ik de oude licentie online vrijgeven.
+- Het is nog nodig om het LibreOffice Language Pack handmatig op te starten. Via de terminal `$ open '/usr/local/Caskroom/libreoffice-language-pack/x.x.x/LibreOffice Language Pack.app'` .
+
+
 ## Bronnen
 
 Een overzicht met handige en inspirerende bronnen om uit te putten.
