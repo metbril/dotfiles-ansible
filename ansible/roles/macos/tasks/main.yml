@@ -18,14 +18,14 @@
   tags: packages
 
 - name: Install apps
-  homebrew_cask: 
+  homebrew: 
     name: "{{ item }}" 
     state: installed
   loop: "{{ apps }}"
   tags: apps
 
 - name: Install drivers
-  homebrew_cask: 
+  homebrew: 
     name: "{{ item }}" 
     state: installed
   loop: "{{ drivers }}"
@@ -34,7 +34,7 @@
     - drivers
 
 - name: Install fonts
-  homebrew_cask:
+  homebrew:
     name: "{{ item }}" 
     state: installed
   loop: "{{ fonts }}"
